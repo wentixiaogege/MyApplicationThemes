@@ -1,0 +1,117 @@
+<resources>
+
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+
+
+        <!--For  API 14 and higher
+
+        for all the widgets not the specific widgets
+
+
+
+        -->
+        <item name="android:windowBackground">#ffedaba6</item>
+
+        <item name="android:editTextColor">#ffb62a23</item>
+        <item name="android:textColorAlertDialogListItem">#ffb62a23</item>
+        <item name="android:textColorHighlightInverse">#ffb62a23</item>
+        <item name="android:textColorHintInverse">#ffb62a23</item>
+        <item name="android:textColorLinkInverse">#ffb62a23</item>
+        <item name="android:textColorPrimary">#ffb62a23</item>
+        <item name="android:textColorPrimaryDisableOnly">#ffb62a23</item>
+        <item name="android:textColorPrimaryInverse">#ffb62a23</item>
+        <item name="android:textColorPrimaryInverseDisableOnly">#ffb62a23</item>
+        <item name="android:textColorPrimaryInverseNoDisable">#ffb62a23</item>
+        <item name="android:textColorPrimaryNoDisable">#ffb62a23</item>
+        <item name="android:textColorSecondary">#ffb62a23</item>
+        <item name="android:textColorSecondaryInverse">#ffb62a23</item>
+        <item name="android:textColorSecondaryInverseNoDisable">#ffb62a23</item>
+        <item name="android:textColorSecondaryNoDisable">#ffb62a23</item>
+        <item name="android:textColorTertiary">#ffb62a23</item>
+        <item name="android:textColorTertiaryInverse">#ffb62a23</item>
+
+        <item name="android:fontFamily">sans-serif</item>
+        <!--
+
+        android:elegantTextHeight	Elegant text height, especially for less compacted complex script text.
+        android:fontFamily	Font family (named by string) for the text.
+        android:fontFeatureSettings	Font feature settings.
+        android:letterSpacing	Text letter-spacing.
+        android:shadowColor	Place a blurred shadow of text underneath the text, drawn with the specified color.
+        android:shadowDx	Horizontal offset of the text shadow.
+        android:shadowDy	Vertical offset of the text shadow.
+        android:shadowRadius	Blur radius of the text shadow.
+        android:textAllCaps	Present the text in ALL CAPS.
+        android:textColor	Text color.
+        android:textColorHighlight	Color of the text selection highlight.
+        android:textColorHint	Color of the hint text.
+        android:textColorLink	Color of the links.
+        android:textSize	Size of the text.
+        android:textStyle	Style (bold, italic, bolditalic) for the text.
+        android:typeface	Typeface (normal, sans, serif, monospace) for the text.
+ -->
+    </style>
+
+
+    <!--
+
+    for specific style
+    -->
+    <style name="TextView1">
+
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+<!--
+
+inherit TextView1 style and overider function
+
+
+    -->
+    <style name="EditText1" parent="TextView1">
+
+        <item name="android:textStyle">normal</item>
+
+    </style>
+    <!--
+
+inherit TextView1 style and add items
+
+
+    -->
+    <style name="TextView1.TextView2">
+
+        <item name="android:padding">30dp</item>
+
+    </style>
+
+    <style name="TextView1.TextView2.TextView3">
+
+        <item name="android:layout_marginTop">30dp</item>
+
+    </style>
+    <!-- You can also define styles that are applied automatically without needing
+        to define style in activity_my by overriding settings
+
+        has the higher priority
+             -->
+    <style name="TextView" parent="@android:style/Widget.TextView">
+                <item name="android:textSize">55sp</item>
+                <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditText" parent="@android:style/Widget.EditText">
+                <item name="android:textSize">55sp</item>
+                <item name="android:textStyle">bold</item>
+
+
+   </style>
+
+
+
+
+
+
+</resources>
