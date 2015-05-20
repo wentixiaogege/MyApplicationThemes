@@ -1,12 +1,16 @@
 package com.example.jack.myapplicationthemes;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+//The reason you are having this problem is because the activity you are trying to apply the dialog
+// theme to is extending ActionBarActivity which requires the AppCompat theme to be applied.
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

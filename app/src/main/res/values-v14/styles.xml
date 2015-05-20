@@ -11,7 +11,7 @@
 
 
         -->
-        <item name="android:windowBackground">#ffedaba6</item>
+        <item name="android:windowBackground">@android:color/holo_blue_bright</item>
 
         <item name="android:editTextColor">#ffb62a23</item>
         <item name="android:textColorAlertDialogListItem">#ffb62a23</item>
